@@ -29,17 +29,17 @@ export default function Home() {
       </div>
 
       {/* Section 1: Hero Section */}
-      <section id="hero" className="h-screen flex items-center justify-center snap-start relative z-10">
+      <section id="hero" className="h-screen flex flex-col justify-center snap-start relative z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 via-purple-900/50 to-indigo-900/50 backdrop-blur-sm"></div>
-        <div className="max-w-6xl mx-auto text-center px-4 relative z-20">
+        <div className="max-w-6xl mx-auto text-center px-4 relative z-20 flex-grow flex flex-col justify-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 drop-shadow-lg">
             你好，我是 
-            <span className="text-blue-300 bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent"> 博客作者</span>
+            <span className="text-blue-300 bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent"> FLASHBACK</span>
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto drop-shadow-md">
             欢迎来到我的个人博客，这里分享我的技术学习、生活感悟和创作思考。
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/blog"
               className="inline-flex items-center px-6 py-3 text-white rounded-lg backdrop-blur-md bg-white/20 hover:bg-white/30 transition-all duration-300 border border-white/20"
@@ -54,11 +54,11 @@ export default function Home() {
               了解更多
             </Link>
           </div>
-          {/* Scroll Indicator */}
-          <div className="flex flex-col items-center animate-bounce">
-            <p className="text-gray-300 text-sm mb-2">向下滚动探索更多</p>
-            <ChevronDown className="h-6 w-6 text-gray-300" />
-          </div>
+        </div>
+        {/* Scroll Indicator - 移到底部 */}
+        <div className="flex flex-col items-center animate-bounce pb-48 relative z-20">
+          <p className="text-gray-300 text-sm mb-2">向下滚动探索更多</p>
+          <ChevronDown className="h-6 w-6 text-gray-300" />
         </div>
       </section>
 

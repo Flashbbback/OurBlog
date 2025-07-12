@@ -3,9 +3,9 @@ import { Github, Mail, Twitter, Heart } from 'lucide-react'
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white h-54 overflow-auto">
-      <div className="max-w-7xl h-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl h-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end">
         <div className="py-3">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-48">
             {/* About */}
             <div className="col-span-1 md:col-span-2">
               <h3 className="text-lg font-semibold mb-2">关于博客</h3>
