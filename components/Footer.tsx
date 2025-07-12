@@ -2,16 +2,15 @@ import { Github, Mail, Twitter, Heart } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-12">
+    <footer className="bg-gray-900 text-white h-54 overflow-auto">
+      <div className="max-w-7xl h-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-3">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* About */}
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-lg font-semibold mb-4">关于博客</h3>
+              <h3 className="text-lg font-semibold mb-2">关于博客</h3>
               <p className="text-gray-400 mb-4">
                 这是一个分享技术学习、生活感悟和创作思考的个人博客。
-                希望通过文字记录成长，与大家分享有价值的内容。
               </p>
               <div className="flex space-x-4">
                 <a
@@ -40,8 +39,8 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">快速链接</h3>
-              <ul className="space-y-2">
+              <h3 className="text-lg font-semibold mb-2">快速链接</h3>
+              <ul className="columns-2 space-y-2">
                 <li>
                   <a href="/blog" className="text-gray-400 hover:text-white transition-colors">
                     博客文章
@@ -62,8 +61,8 @@ export default function Footer() {
 
             {/* Categories */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">分类</h3>
-              <ul className="space-y-2">
+              <h3 className="text-lg font-semibold mb-2">分类</h3>
+              <ul className="columns-2 space-y-2 ">
                 <li>
                   <a href="/blog?category=tech" className="text-gray-400 hover:text-white transition-colors">
                     技术

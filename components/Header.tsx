@@ -16,12 +16,12 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-fuji-a backdrop-blur-sm border-b border-fuji-a sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="text-xl font-bold text-gray-900 hover:text-primary-600 transition-colors">
+            <Link href="/" className="text-xl font-bold text-fuji-b hover:text-primary-600 transition-colors">
               个人博客
             </Link>
           </div>
@@ -34,8 +34,8 @@ export default function Header() {
                 href={item.href}
                 className={`text-sm font-medium transition-colors ${
                   pathname === item.href
-                    ? 'text-primary-600'
-                    : 'text-gray-700 hover:text-primary-600'
+                    ? 'text-primary-100'
+                    : 'text-gray-100 hover:text-primary-100'
                 }`}
               >
                 {item.name}

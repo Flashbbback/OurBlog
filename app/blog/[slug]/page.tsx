@@ -97,7 +97,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header */}
       <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center gap-4 mb-6">
             <Link 
               href="/blog" 
@@ -150,7 +150,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       </div>
 
       {/* Article Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+              <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <article className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
           <div className="p-8">
             <div className="prose prose-lg max-w-none">
